@@ -1,8 +1,8 @@
-package character;
+package game.character;
 
-import weapon.KnifeBehavior;
+import game.weapon.KnifeBehavior;
 
-public class Queen extends Character{
+public class Queen extends Character {
 
     public Queen() {
         super.weaponBehavior = new KnifeBehavior();

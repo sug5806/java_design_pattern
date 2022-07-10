@@ -1,4 +1,4 @@
-package weapon;
+package game.weapon;
 
 public class KnifeBehavior implements WeaponBehavior{
 

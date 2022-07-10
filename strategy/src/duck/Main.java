@@ -1,5 +1,7 @@
-import duckBasic.Duck;
-import real_duck.MallardDuck;
+package duck;
+
+import duck.duckBasic.Duck;
+import duck.real_duck.MallardDuck;
 
 public class Main {
     public static void main(String[] args) {

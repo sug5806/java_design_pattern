@@ -1,8 +1,8 @@
-package real_duck;
+package duck.real_duck;
 
-import duckBasic.Duck;
-import duckBasic.duck_action.FlyWithWings;
-import duckBasic.duck_action.Quack;
+import duck.duckBasic.Duck;
+import duck.duckBasic.duck_action.FlyWithWings;
+import duck.duckBasic.duck_action.Quack;
 
 public class MallardDuck extends Duck {
 

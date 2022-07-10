@@ -1,4 +1,4 @@
-package duckBasic;
+package duck.duckBasic;
 
 public abstract class Duck {
     protected FlyBehavior flyBehavior;
