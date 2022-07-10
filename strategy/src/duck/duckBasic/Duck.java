@@ -1,5 +1,8 @@
 package duck.duckBasic;
 
+import duck.duckBasic.duck_action.FlyBehavior;
+import duck.duckBasic.duck_action.QuackBehavior;
+
 public abstract class Duck {
     protected FlyBehavior flyBehavior;
     protected QuackBehavior quackBehavior;

@@ -1,7 +1,5 @@
 package duck.duckBasic.duck_action;
 
-import duck.duckBasic.FlyBehavior;
-
 public class FlyWithWings implements FlyBehavior {
 
     @Override
