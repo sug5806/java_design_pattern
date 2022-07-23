@@ -10,8 +10,7 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
 
     @Override
     public void display() {
-        String str = "현재 상태 온도 : " + temperature + "C\n" +
-                "습도 : " + humidity + "%\n";
+        String str = "현재 상태 온도 : " + temperature + "C";
         System.out.println(str);
     }
 
