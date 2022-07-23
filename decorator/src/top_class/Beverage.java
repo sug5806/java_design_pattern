@@ -1,3 +1,5 @@
+package top_class;
+
 public abstract class Beverage {
     String description;
 
