@@ -8,7 +8,7 @@ public class Coffee {
         System.out.println(beverage.getDescription());
         System.out.println(beverage.cost());
 
-        Beverage doubleMocha = new Espresso();
+        Beverage doubleMocha = new Espresso(Beverage.Size.GRANDE);
         doubleMocha = new Mocha(doubleMocha);
         doubleMocha = new Mocha(doubleMocha);
         doubleMocha = new Whip(doubleMocha);
