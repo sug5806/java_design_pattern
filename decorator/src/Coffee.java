@@ -1,3 +1,5 @@
+import decorator.Mocha;
+import decorator.Whip;
 import top_class.Beverage;
 
 public class Coffee {

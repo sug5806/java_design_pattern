@@ -1,6 +1,9 @@
+package decorator;
+
+import decorator.CondimentDecorator;
 import top_class.Beverage;
 
-public class Soy extends CondimentDecorator{
+public class Soy extends CondimentDecorator {
 
     public Soy(Beverage beverage) {
         this.beverage = beverage;
