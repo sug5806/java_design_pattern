@@ -1,4 +1,4 @@
-package top_class;
+package coffee.top_class;
 
 public abstract class Beverage {
     public enum Size{ TALL, GRANDE, VENTI }

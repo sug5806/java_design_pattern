@@ -1,6 +1,8 @@
-import decorator.Mocha;
-import decorator.Whip;
-import top_class.Beverage;
+package coffee;
+
+import coffee.decorator.Mocha;
+import coffee.decorator.Whip;
+import coffee.top_class.Beverage;
 
 public class Coffee {
     public static void main(String[] args) {

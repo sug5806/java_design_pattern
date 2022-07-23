@@ -1,4 +1,6 @@
-import top_class.Beverage;
+package coffee;
+
+import coffee.top_class.Beverage;
 
 public class Espresso extends Beverage {
 

@@ -1,7 +1,6 @@
-package decorator;
+package coffee.decorator;
 
-import decorator.CondimentDecorator;
-import top_class.Beverage;
+import coffee.top_class.Beverage;
 
 public class Whip extends CondimentDecorator {
 
