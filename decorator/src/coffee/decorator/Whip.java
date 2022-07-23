@@ -2,7 +2,7 @@ package coffee.decorator;
 
 import coffee.top_class.Beverage;
 
-public class Whip extends CondimentDecorator {
+public class Whip extends coffee.decorator.CondimentDecorator {
 
     public Whip(Beverage beverage) {
         this.beverage = beverage;
