@@ -5,6 +5,6 @@ import pizza_factory.ingredient.ingredient_interface.Veggies;
 public class BlackOlives implements Veggies {
 
 	public String toString() {
-		return "Black Olives";
+		return "올리브";
 	}
 }

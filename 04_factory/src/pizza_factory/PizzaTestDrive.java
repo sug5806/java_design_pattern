@@ -3,7 +3,7 @@ package pizza_factory;
 import pizza_factory.store.ChicagoPizzaStore;
 import pizza_factory.store.NYPizzaStore;
 import pizza_factory.store.PizzaStore;
-import pizza_factory.super_pizza.Pizza;
+import pizza_factory.pizza.Pizza;
 
 public class PizzaTestDrive {
     public static void main(String[] args) {

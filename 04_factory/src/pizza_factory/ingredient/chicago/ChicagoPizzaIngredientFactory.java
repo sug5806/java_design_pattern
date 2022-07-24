@@ -22,7 +22,7 @@ public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
 
     @Override
     public Veggies[] createVeggies() {
-        return new Veggies[]{new Spinach(), new RedPepper(), new Mushroom(), new Onion(), new BlackOlives(), new BlackOlives()};
+        return new Veggies[]{new Spinach(), new RedPepper(), new Mushroom(), new Onion(), new BlackOlives()};
     }
 
     @Override

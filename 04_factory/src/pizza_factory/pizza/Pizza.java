@@ -1,6 +1,8 @@
-package pizza_factory.super_pizza;
+package pizza_factory.pizza;
 
 import pizza_factory.ingredient.ingredient_interface.*;
+
+import java.util.Arrays;
 
 public abstract class Pizza {
     String name;
@@ -10,9 +12,9 @@ public abstract class Pizza {
     Veggies veggies[];
     Cheese cheese;
     Pepperoni pepperoni;
-    Clams clams;
+    Clams clam;
 
-    abstract void prepare();
+    public abstract void prepare();
 
     public void bake() {
         System.out.println("175도에서 25분 간 굽기");
@@ -37,6 +39,11 @@ public abstract class Pizza {
     public String toString() {
         StringBuffer display = new StringBuffer();
         display.append("---- " + name + " ----\n");
+        display.append(dough + "\n")
+                .append(Arrays.toString(veggies) + "\n")
+                .append(cheese + "\n")
+                .append(pepperoni + "\n")
+                .append(clam + "\n");
         return display.toString();
     }
 }
