@@ -12,7 +12,7 @@ public class LowerCaseInputStream extends FilterInputStream {
 
     public int read() throws IOException {
         int c = in.read();
-        return (c == -1 ? c : Character.toLowerCase((char)c));
+        return (c == -1 ? c : Character.toLowerCase((char) c));
     }
 
     public int read(byte[] b, int offset, int len) throws IOException {
