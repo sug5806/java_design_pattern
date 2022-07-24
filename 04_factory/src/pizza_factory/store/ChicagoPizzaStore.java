@@ -1,5 +1,6 @@
 package pizza_factory.store;
 
+import pizza_factory.PizzaEnum;
 import pizza_factory.pizza_style.chicaho.ChicagoStyleCheesePizza;
 import pizza_factory.pizza_style.chicaho.ChicagoStyleClamPizza;
 import pizza_factory.pizza_style.chicaho.ChicagoStylePepperoniPizza;
@@ -8,15 +9,15 @@ import pizza_factory.super_pizza.Pizza;
 
 public class ChicagoPizzaStore extends PizzaStore {
 
-	Pizza createPizza(String item) {
+	Pizza createPizza(PizzaEnum item) {
         switch (item) {
-            case "cheese":
+            case CHEESE:
                 return new ChicagoStyleCheesePizza();
-            case "veggie":
+            case VEGGIE:
                 return new ChicagoStyleVeggiePizza();
-            case "clam":
+            case CLAM:
                 return new ChicagoStyleClamPizza();
-            case "pepperoni":
+            case PEPPERONI:
                 return new ChicagoStylePepperoniPizza();
             default:
                 return null;

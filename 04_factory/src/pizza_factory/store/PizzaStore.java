@@ -1,9 +1,10 @@
 package pizza_factory.store;
 
+import pizza_factory.PizzaEnum;
 import pizza_factory.super_pizza.Pizza;
 
 public abstract class PizzaStore {
-    public Pizza orderPizza(String type) {
+    public Pizza orderPizza(PizzaEnum type) {
         Pizza pizza;
 
         pizza = createPizza(type);
@@ -16,5 +17,5 @@ public abstract class PizzaStore {
         return pizza;
     }
 
-    abstract Pizza createPizza(String type);
+    abstract Pizza createPizza(PizzaEnum type);
 }
