@@ -1,4 +1,4 @@
-package simple_remote_control;
+package simple_remote_control.light;
 
 public class Light {
     public void on() {
