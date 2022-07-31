@@ -39,7 +39,8 @@ public class RemoteControl {
             stringBuilder.append("[slot ").append(i).append("] ")
                     .append(onCommandList[i].getClass().getName())
                     .append("     ")
-                    .append(offCommandList[i].getClass().getName());
+                    .append(offCommandList[i].getClass().getName())
+                    .append("\n");
 
         }
 

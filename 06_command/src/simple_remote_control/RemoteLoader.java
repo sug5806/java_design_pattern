@@ -24,16 +24,15 @@ public class RemoteLoader {
         // 커맨드 객체에 리시버 전달
         GarageDoorOpenCommand garageDoorOpenCommand = new GarageDoorOpenCommand(garageDoor);
         GarageDoorCloseCommand garageDoorCloseCommand = new GarageDoorCloseCommand(garageDoor);
-        LightOnCommand lightOnCommand = new LightOnCommand(light);
-        LightOffCommand lightOffCommand = new LightOffCommand(light);
         StereoOnWithCDCommand stereoOnWithCDCommand = new StereoOnWithCDCommand(stereoAudio);
         StereoOffCommand stereoOffCommand = new StereoOffCommand(stereoAudio);
 
         // 인보커에 커맨드 객체 세팅
         remoteControl.setCommand(0, garageDoorOpenCommand, garageDoorCloseCommand);
-        remoteControl.setCommand(1, lightOnCommand, lightOffCommand);
+        remoteControl.setCommand(1, light::on, light::off);
         remoteControl.setCommand(2, stereoOnWithCDCommand, stereoOffCommand);
 
+        System.out.println(remoteControl);
 
         remoteControl.pressOnButton(0);
         remoteControl.pressOffButton(0);
