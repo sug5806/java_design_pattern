@@ -1,6 +1,6 @@
 package simple_remote_control.garage;
 
-import simple_remote_control.Command;
+import simple_remote_control.command.Command;
 
 public class GarageDoorOpenCommand implements Command {
     GarageDoor garageDoor;

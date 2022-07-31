@@ -1,7 +1,6 @@
 package simple_remote_control.light;
 
-import simple_remote_control.Command;
-import simple_remote_control.light.Light;
+import simple_remote_control.command.Command;
 
 public class LightOnCommand implements Command {
     Light light;
