@@ -3,11 +3,12 @@ package simple_remote_control;
 import simple_remote_control.command.Command;
 import simple_remote_control.command.NoCommand;
 
-public class RemoteControl {
+public class RemoteControlWithUndo {
     Command[] onCommandList;
     Command[] offCommandList;
+    Command undoCommand;
 
-    public RemoteControl() {
+    public RemoteControlWithUndo() {
         onCommandList = new Command[7];
         offCommandList = new Command[7];
 
@@ -16,6 +17,7 @@ public class RemoteControl {
             onCommandList[i] = noCommand;
             offCommandList[i] = noCommand;
         }
+        undoCommand = noCommand;
     }
 
     public void setCommand(int slotNumber, Command onCommand, Command offCommand) {
@@ -25,10 +27,16 @@ public class RemoteControl {
 
     public void pressOnButton(int slotNumber) {
         onCommandList[slotNumber].execute();
+        undoCommand = onCommandList[slotNumber];
     }
 
     public void pressOffButton(int slotNumber) {
         offCommandList[slotNumber].execute();
+        undoCommand = offCommandList[slotNumber];
+    }
+
+    public void pressUndoButton() {
+        undoCommand.undo();
     }
 
     @Override

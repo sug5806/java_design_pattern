@@ -14,7 +14,7 @@ public class RemoteLoader {
 
     public static void main(String[] args) {
         // 인보커
-        RemoteControl remoteControl = new RemoteControl();
+        RemoteControlWithUndo remoteControlWithUndo = new RemoteControlWithUndo();
 
         // 리시버
         GarageDoor garageDoor = new GarageDoor();
@@ -30,18 +30,18 @@ public class RemoteLoader {
         StereoOffCommand stereoOffCommand = new StereoOffCommand(stereoAudio);
 
         // 인보커에 커맨드 객체 세팅
-        remoteControl.setCommand(0, garageDoorOpenCommand, garageDoorCloseCommand);
-        remoteControl.setCommand(1, lightOnCommand, lightOffCommand);
-        remoteControl.setCommand(2, stereoOnWithCDCommand, stereoOffCommand);
+        remoteControlWithUndo.setCommand(0, garageDoorOpenCommand, garageDoorCloseCommand);
+        remoteControlWithUndo.setCommand(1, lightOnCommand, lightOffCommand);
+        remoteControlWithUndo.setCommand(2, stereoOnWithCDCommand, stereoOffCommand);
 
-        System.out.println(remoteControl);
+        System.out.println(remoteControlWithUndo);
 
-        remoteControl.pressOnButton(0);
-        remoteControl.pressOffButton(0);
-        remoteControl.pressOnButton(1);
-        remoteControl.pressOffButton(1);
-        remoteControl.pressOnButton(2);
-        remoteControl.pressOffButton(2);
+        remoteControlWithUndo.pressOnButton(0);
+        remoteControlWithUndo.pressOffButton(0);
+        remoteControlWithUndo.pressOnButton(1);
+        remoteControlWithUndo.pressOffButton(1);
+        remoteControlWithUndo.pressOnButton(2);
+        remoteControlWithUndo.pressOffButton(2);
 
 
     }
