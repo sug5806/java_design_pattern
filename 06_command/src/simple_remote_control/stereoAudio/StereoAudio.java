@@ -5,7 +5,11 @@ public class StereoAudio {
 
 
     public void on() {
-        System.out.println("스테레오 오디오를 켭니다.");
+        System.out.println("스테레오 오디오가 켜졌습니다.");
+    }
+
+    public void off() {
+        System.out.println("스테레오 오디오가 꺼졌습니다.");
     }
 
     public void setCD() {
